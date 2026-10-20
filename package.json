@@ -1,0 +1,22 @@
+{
+  "name": "whatsapp-resumo",
+  "version": "1.0.0",
+  "scripts": {
+    "parear": "node parear.js",
+    "teste": "node resumo.js --teste",
+    "resumo": "node resumo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Bot de resumo diário de grupo do WhatsApp",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "@google/genai": "^2.30.0",
+    "baileys": "^7.0.0-rc14",
+    "dotenv": "^18.0.8",
+    "pino": "^10.4.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
