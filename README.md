@@ -1,6 +1,6 @@
 # Resumo diário do grupo do WhatsApp
 
-Bot que lê um grupo do WhatsApp (o da escola) e, todo dia às **20h**, envia para uma lista de números um resumo só com o que importa: avisos, tarefas, datas, eventos e recados de saúde.
+Bot que lê um grupo do WhatsApp e, todo dia às **20h**, envia para uma lista de números um resumo só com o que importa: avisos, tarefas, datas, eventos e recados.
 
 O bot não fica ligado o dia todo. Ele roda uma vez por dia, faz o trabalho e encerra.
 
@@ -111,6 +111,6 @@ O WhatsApp desconecta os aparelhos conectados se o celular do bot ficar **14 dia
 - A pasta `auth_info/` dá **acesso total** à conta do WhatsApp do bot. Não compartilhe nem versione.
 - As mensagens do grupo ficam em `dados/mensagens.json` por até 7 dias e são enviadas à IA escolhida. No plano gratuito do Gemini, o Google pode usar esse conteúdo para melhorar os produtos dele. A API do Claude não usa os dados para treinar modelos por padrão.
 - O Baileys **não é oficial**, e automação viola os termos do WhatsApp. Por isso o bot usa um número secundário.
-- O resumo é gerado por IA e pode errar ou omitir algo. Para saúde e prazos, confira a mensagem original no grupo.
+- O resumo é gerado por IA e pode errar ou omitir algo. Para assuntos importantes, confira a mensagem original no grupo.
 
 Detalhes de implementação e decisões de projeto estão no [guia](guia_de_implementa_o_whatsapp_daily_summary_bot.md).
