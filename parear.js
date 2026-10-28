@@ -7,7 +7,7 @@ await esperar(15_000);
 const grupos = Object.values(await conexao.sock.groupFetchAllParticipating())
   .sort((a, b) => a.subject.localeCompare(b.subject, 'pt-BR'));
 
-console.log('\nGrupos desta conta (copie o nome para NOME_GRUPO no .env):\n');
+console.log('\nGrupos desta conta (copie os nomes para GRUPOS no .env, separados por ;):\n');
 for (const grupo of grupos) {
   console.log(`${grupo.id}   ${grupo.subject}`);
 }
